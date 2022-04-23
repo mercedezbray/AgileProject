@@ -23,7 +23,7 @@ namespace PourDecisions.Controllers
                 AlcType = newCategory.AlcType,
             };
 
-            _db.Categories.Add(category);
+            _db.Category.Add(category);
             await _db.SaveChangesAsync();
             return Ok();
         }

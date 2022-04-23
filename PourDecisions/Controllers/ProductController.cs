@@ -21,6 +21,7 @@ namespace PourDecisions.Controllers
             Product product = new Product()
             {
                 Name = newProduct.Name,
+                Category = newProduct.Category,
                 Price = newProduct.Price,
             };
 
@@ -34,5 +35,20 @@ namespace PourDecisions.Controllers
             var products = await _db.Products.ToListAsync();
             return Ok(products);
         }
+        // [HttpDelete]
+        // public async Task<IActionResult> DeleteProduct([FromForm] ProductEdit product)
+        // {
+        //     // Product product = new Product()
+        //     // {
+        //     //     Name = newProduct.Name,
+        //     //     Category = newProduct.Category,
+        //     //     Price = newProduct.Price,
+        //     // };
+
+        //     _db.Products.Remove(product);
+        //     await _db.SaveChangesAsync();
+        //     return Ok();
+        // }
+
     }
 }
