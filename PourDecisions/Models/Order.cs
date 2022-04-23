@@ -9,5 +9,10 @@ namespace PourDecisions.Models
         public int? ProductId { get; set; }
 
         public virtual Product? Product { get; set; }
+
+        // public static implicit operator Order(Order v)
+        // {
+        //     throw new NotImplementedException();
+        // }
     }
 }
