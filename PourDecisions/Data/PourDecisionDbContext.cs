@@ -17,7 +17,7 @@ namespace PourDecisions.Data
         {
         }
 
-        public virtual DbSet<Category> Categories { get; set; } = null!;
+        public virtual DbSet<Category> Category { get; set; } = null!;
         public virtual DbSet<Order> Orders { get; set; } = null!;
         public virtual DbSet<Product> Products { get; set; } = null!;
 
